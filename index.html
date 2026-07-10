@@ -1,120 +1,139 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <link rel="icon" href="data:image/png;base64,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">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRENEY-4Pcs CD Renda Pinggang Karet Huruf-Renda</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Frido Women's Arch Comfort Sandals</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --primary: #002e1c; --bg: #f5f5f5; --white: #fff; --border: #f2f2f2; --text-muted: #888; }
+        :root { 
+            --primary: #020094; /* Classic Vintage Tone */
+            --accent: #C5A059; /* Muted Gold */
+            --bg-body: #EDEADB; /* Rich Antique Paper */
+            --bg-container: #FDFCF9; /* Lighter Cream */
+            --text-main: #242221; 
+            --text-muted: #64615E;
+            --border: #CFC9B8;
+        }
         * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color: transparent; }
-        body { font-family: 'Inter', sans-serif; background: var(--bg); color: #333; }
-        .container { max-width: 500px; margin: 0 auto; background: var(--white); min-height: 100vh; position: relative; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg-body); color: var(--text-main); -webkit-font-smoothing: antialiased; }
+        .container { max-width: 500px; margin: 0 auto; background: var(--bg-container); min-height: 100vh; position: relative; border-left: 1px solid rgba(0,0,0,0.12); border-right: 1px solid rgba(0,0,0,0.12); box-shadow: 0 0 40px rgba(0,0,0,0.08); }
         
-        .product-swiper { width: 100%; aspect-ratio: 1/1; background: #fafafa; margin-top: 0; }
+        .product-swiper { width: 100%; aspect-ratio: 1/1; background: #E5E1D2; border-bottom: 3px double var(--border); position: relative; }
+        .product-swiper::after { content: ''; position: absolute; inset: 0; pointer-events: none; border: 14px solid var(--bg-container); z-index: 5; }
         
-        /* Flash Sale bar */
-        .flash-sale-bar { color: white; display: flex; align-items: center; justify-content: space-between; padding: 12px 15px; }
+        /* Flash Sale bar - Vintage Ribbon */
+        .flash-sale-bar { background: var(--text-main); color: var(--bg-container); display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; border-bottom: 4px double var(--accent); position: relative; z-index: 10; }
         .fs-left { display: flex; flex-direction: column; }
-        .fs-label { font-size: 16px; font-weight: 900; text-transform: uppercase; font-style: italic; }
-        .fs-subtext { font-size: 9px; font-weight: 700; opacity: 0.9; }
-        .fs-right { display: flex; flex-direction: column; align-items: flex-end; }
-        .fs-timer-label { font-size: 10px; font-weight: 700; margin-bottom: 4px; }
-        .timer-box { background: rgba(0,0,0,0.3); padding: 3px 8px; border-radius: 3px; font-size: 13px; font-weight: 900; font-family: monospace; }
+        .fs-label { font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; text-transform: uppercase; font-style: italic; letter-spacing: 1.5px; color: var(--accent); }
+        .fs-subtext { font-size: 9px; font-weight: 700; opacity: 0.9; letter-spacing: 2px; color: var(--bg-container); text-transform: uppercase; margin-top: 3px; }
+        .fs-right { display: flex; flex-direction: column; align-items: flex-end; justify-content: center; }
+        .fs-timer-label { font-family: 'Playfair Display', serif; font-size: 11px; font-weight: 600; margin-bottom: 4px; color: var(--border); font-style: italic; }
+        .timer-box { background: transparent; color: var(--accent); padding: 0; font-size: 15px; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: 1.5px; }
         
-        .p-info { padding: 15px; border-bottom: 1px solid var(--border); background: #fff; }
-        .p-price-now { font-size: 1.8rem; color: var(--primary); font-weight: 800; }
-        .p-price-was { font-size: 0.85rem; color: #999; text-decoration: line-through; }
-        .p-discount-tag { background: #fee2e2; color: #ef4444; font-size: 11px; font-weight: 800; padding: 2px 6px; border-radius: 4px; }
-        .p-title { font-size: 1rem; font-weight: 600; line-height: 1.4; margin-bottom: 10px; }
+        .p-info { padding: 40px 24px 28px; background: transparent; position: relative; text-align: center; }
+        .p-price-row { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 18px; }
+        .p-price-now { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--primary); font-weight: 700; line-height: 1; }
+        .p-price-was { font-size: 1.1rem; color: var(--text-muted); text-decoration: line-through; font-family: 'Playfair Display', serif; font-style: italic; }
+        .p-discount-tag { background: var(--primary); color: #fff; font-size: 10px; font-weight: 700; padding: 5px 10px; text-transform: uppercase; letter-spacing: 1.5px; box-shadow: 2px 2px 0 rgba(0,0,0,0.15); font-family: 'Plus Jakarta Sans', sans-serif; }
+        .p-title { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 700; line-height: 1.3; margin-bottom: 22px; color: var(--text-main); letter-spacing: -0.5px; }
         
         /* Store Section Bar */
-        .shop-section { display: flex; align-items: center; gap: 12px; padding: 15px; border-bottom: 8px solid #f1f1f1; background: #fff; }
-        .shop-logo { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 1px solid #eee; }
+        .shop-section { display: flex; align-items: center; gap: 16px; padding: 22px 24px; margin: 0; background: var(--bg-body); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .shop-logo { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); filter: sepia(0.25) contrast(1.1); padding: 3px; background: var(--bg-container); }
         .shop-info { flex: 1; }
-        .shop-name { font-size: 14px; font-weight: 700; color: #333; }
-        .shop-meta { font-size: 11px; color: #888; margin-top: 2px; }
-
-        .s-section { padding: 15px; border-bottom: 8px solid #f1f1f1; background: #fff; }
-        .s-section-title { font-weight: 800; font-size: 13px; color: #333; text-transform: uppercase; }
+        .shop-name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--text-main); }
+        .shop-meta { font-size: 12px; color: var(--text-muted); margin-top: 4px; font-style: italic; font-family: 'Playfair Display', serif; }
+        
+        .s-section { padding: 36px 24px; border-bottom: 1px solid var(--border); background: transparent; }
+        .s-section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 3px; border-bottom: 1px solid var(--accent); padding-bottom: 10px; margin-bottom: 26px; display: inline-block; }
         
         /* Horizontal Variants Scroll */
-        .variant-scroll-container { display: flex; gap: 10px; overflow-x: auto; padding: 5px 0 15px; scrollbar-width: none; -ms-overflow-style: none; }
+        .variant-scroll-container { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 12px; scrollbar-width: none; }
         .variant-scroll-container::-webkit-scrollbar { display: none; }
-        .variant-card { flex: 0 0 100px; border: 1px solid #eee; border-radius: 4px; padding: 4px; position: relative; cursor: pointer; transition: 0.2s; background: #fff; }
-        .v-card-img { width: 100%; aspect-ratio: 1/1; overflow: hidden; border-radius: 2px; margin-bottom: 6px; }
-        .v-card-img img { width: 100%; height: 100%; object-fit: cover; }
-        .v-card-name { font-size: 11px; text-align: center; color: #555; font-weight: 500; height: 32px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-        .v-check { position: absolute; top: 0; right: 0; background: var(--primary); color: #fff; width: 16px; height: 16px; border-radius: 0 3px 0 8px; font-size: 9px; display: none; align-items: center; justify-content: center; z-index: 2; }
-        .variant-card.active { border-color: var(--primary); }
-        .variant-card.active .v-card-name { color: var(--primary); font-weight: 700; }
+        .variant-card { flex: 0 0 115px; border: 1px solid var(--border); padding: 7px; position: relative; cursor: pointer; transition: 0.3s; background: var(--bg-container); }
+        .v-card-img { width: 100%; aspect-ratio: 1/1; overflow: hidden; margin-bottom: 10px; border: 1px solid var(--border); }
+        .v-card-img img { width: 100%; height: 100%; object-fit: cover; filter: sepia(0.2) contrast(1.05); transition: 0.5s; }
+        .variant-card:hover .v-card-img img { filter: sepia(0) contrast(1.1); transform: scale(1.05); }
+        .v-card-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 10px; text-align: center; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .v-check { position: absolute; top: 0; right: 0; background: var(--accent); color: #fff; width: 22px; height: 22px; font-size: 10px; display: none; align-items: center; justify-content: center; z-index: 2; border-bottom-left-radius: 2px; }
+        .variant-card.active { border-color: var(--primary); padding: 6px; border-width: 2px; box-shadow: 4px 4px 0 rgba(var(--primary), 0.1); }
+        .variant-card.active .v-card-name { color: var(--primary); }
         .variant-card.active .v-check { display: flex; }
-
-        .shipping-box { display: flex !important; align-items: center; gap: 12px; padding: 15px; border-bottom: 8px solid #f1f1f1; background: #fff; cursor: pointer; }
-        .shipping-icon { color: #26aa99; font-size: 18px; }
+        
+        .shipping-box { display: flex; align-items: center; gap: 16px; padding: 24px; background: rgba(197, 160, 89, 0.06); border-bottom: 1px solid var(--border); cursor: pointer; }
+        .shipping-icon { color: var(--accent); font-size: 22px; }
         .shipping-text { flex: 1; }
-        .shipping-title { font-size: 12px; font-weight: 600; color: #26aa99; display: flex; align-items: center; gap: 6px; }
-        .shipping-desc { font-size: 11px; color: #888; margin-top: 2px; }
+        .shipping-title { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; color: var(--text-main); margin-bottom: 4px; font-style: italic; }
+        .shipping-desc { font-size: 12px; color: var(--text-muted); font-weight: 500; }
         
         /* Features Section */
-        .s-section-features { background: #fff; border-bottom: 8px solid #f1f1f1; }
-        .features-vertical-list { display: flex; flex-direction: column; }
-        .feature-vertical-item { padding: 0 0 30px 0; }
-        .feature-img-large { width: 100%; height: auto; display: block; }
-        .feature-content-large { padding: 15px 20px; }
-        .feature-title-large { font-size: 15px; font-weight: 800; color: #333; margin-bottom: 8px; }
-        .feature-desc-large { font-size: 12px; color: #666; line-height: 1.6; }
-
-        .dropdown-trigger { padding: 15px; display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 13px; cursor: pointer; color: #444; border-bottom: 1px solid #f8f8f8;}
-        .dropdown-content { padding: 0 15px 15px; font-size: 13px; color: #666; white-space: pre-wrap; line-height: 1.6; display: none; }
-        .dropdown-content.active { display: block; }
+        .s-section-features { background: transparent; border-bottom: 1px solid var(--border); padding: 40px 0; }
+        .vintage-divider { font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; text-align: center; color: var(--accent); letter-spacing: 2px; margin-bottom: 32px; text-transform: uppercase; }
+        .features-vertical-list { display: flex; flex-direction: column; gap: 0; }
+        .feature-vertical-item { padding: 0 24px 36px; border-bottom: 1px dashed var(--border); margin-bottom: 36px; }
+        .feature-vertical-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .feature-img-large { width: 100%; height: auto; display: block; filter: sepia(0.18) contrast(1.05); border: 8px solid var(--bg-body); box-shadow: 0 5px 18px rgba(0,0,0,0.06); margin-bottom: 24px; }
+        .feature-content-large { padding: 0; text-align: center; }
+        .feature-title-large { font-family: 'Playfair Display', serif; font-size: 23px; font-weight: 700; color: var(--primary); margin-bottom: 12px; line-height: 1.25; }
+        .feature-desc-large { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13.5px; color: var(--text-muted); line-height: 1.7; font-weight: 500; }
         
-        .s-testimonial-item { padding: 15px 0; border-bottom: 1px solid #f8f8f8; }
-        .st-header { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
-        .st-avatar { width: 32px; height: 32px; border-radius: 50%; border: 1px solid #eee; }
-        .st-name { font-size: 12px; font-weight: 600; color: #333; }
-        .st-stars { color: #f1c40f; font-size: 9px; margin: 2px 0; }
-        .st-meta { font-size: 10px; color: #999; }
-        .st-text { font-size: 12px; color: #444; line-height: 1.6; margin-bottom: 10px; }
-        .st-media img { width: 80px; height: 80px; object-fit: cover; border-radius: 6px; border: 1px solid #eee; }
+        .dropdown-trigger { padding: 24px; display: flex; justify-content: space-between; align-items: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; color: var(--text-main); border-bottom: 1px solid var(--border); background: var(--bg-body); transition: background 0.2s; }
+        .dropdown-trigger:hover { background: #E4DFD2; }
+        .dropdown-content { padding: 0 24px 36px; font-size: 14px; color: var(--text-main); white-space: pre-wrap; line-height: 1.8; display: none; background: transparent; font-weight: 500; }
+        .dropdown-content.active { display: block; padding-top: 24px; }
         
-        .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 2000; display: none; justify-content: center; align-items: center; padding: 20px; }
-        .lightbox-container { background: transparent; padding: 0; border-radius: 12px; width: 70%; max-width: 350px; position: relative; }
-        .lightbox img { width: 100%; height: auto; border-radius: 12px; display: block; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
-        .lightbox-close { position: absolute; top: -40px; right: 0; color: #fff; font-size: 32px; cursor: pointer; }
-
-        /* Variant Summary styles - FIXED SMALLER SIZING */
-        .summary-card { display: flex; align-items: center; gap: 10px; padding: 10px; border: 1px solid #f0f0f0; border-radius: 8px; margin-bottom: 15px; background: #fafafa; }
-        .summary-img { width: 48px; height: 48px; border-radius: 4px; object-fit: cover; border: 1px solid #eee; flex-shrink: 0; }
+        .s-testimonial-item { padding: 24px 0; border-bottom: 1px dashed var(--border); }
+        .s-testimonial-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .st-header { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px; }
+        .st-avatar { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--border); filter: sepia(0.2); }
+        .st-user-info { flex: 1; }
+        .st-name { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; color: var(--text-main); }
+        .st-stars { color: var(--accent); font-size: 11px; margin: 4px 0; letter-spacing: 2.5px; }
+        .st-meta { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; }
+        .st-text { font-size: 16px; color: var(--text-main); line-height: 1.7; margin-bottom: 16px; font-style: italic; font-family: 'Playfair Display', serif; }
+        .st-media img { width: 84px; height: 84px; object-fit: cover; border: 4px solid var(--bg-body); box-shadow: 0 3px 10px rgba(0,0,0,0.06); filter: sepia(0.12); }
+        
+        .lightbox { position: fixed; inset: 0; background: rgba(30, 28, 27, 0.96); z-index: 2000; display: none; justify-content: center; align-items: center; padding: 20px; }
+        .lightbox-container { background: transparent; padding: 0; width: 100%; max-width: 450px; position: relative; }
+        .lightbox img { width: 100%; height: auto; display: block; border: 10px solid var(--bg-body); box-shadow: 0 25px 60px rgba(0,0,0,0.7); }
+        .lightbox-close { position: absolute; top: -50px; right: 0; color: var(--bg-body); font-size: 36px; cursor: pointer; transition: 0.2s; }
+        
+        /* Variant Summary styles */
+        .summary-card { display: flex; align-items: center; gap: 16px; padding: 16px; border: 1px solid var(--border); margin-bottom: 24px; background: var(--bg-body); box-shadow: 4px 4px 0 rgba(0,0,0,0.05); }
+        .summary-img { width: 56px; height: 56px; object-fit: cover; border: 1px solid var(--border); flex-shrink: 0; padding: 2px; background: var(--bg-container); }
         .summary-info { flex: 1; min-width: 0; }
-        .summary-title { font-size: 12px; font-weight: 700; color: #333; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-        .summary-variant-name { font-size: 10px; font-weight: 600; color: #888; background: #eee; padding: 2px 8px; border-radius: 3px; display: inline-block; margin-top: 3px; }
-        .summary-check { margin-left: 8px; color: #26aa99; font-size: 16px; }
-
+        .summary-title { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 700; color: var(--text-main); margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .summary-variant-name { font-size: 10px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1.5px; font-family: 'Plus Jakarta Sans', sans-serif; }
+        
         /* Related Products Section */
-        .related-swiper { padding: 5px 0 20px; }
-        .related-card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; background: #fff; height: 100%; display: flex; flex-direction: column; transition: transform 0.2s; }
-        .related-card:active { transform: scale(0.98); }
-        .related-img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
-        .related-info { padding: 12px; flex: 1; display: flex; flex-direction: column; gap: 4px; }
-        .related-name { font-size: 11px; font-weight: 700; color: #333; height: 32px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.4; }
-        .related-price-row { display: flex; flex-direction: column; }
-        .related-price-now { font-size: 13px; font-weight: 800; color: var(--primary); }
-        .related-price-was { font-size: 9px; color: #999; text-decoration: line-through; }
-        .related-btn { margin-top: 8px; font-size: 10px; font-weight: 800; color: #fff; text-align: center; padding: 8px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .related-swiper { padding: 10px 0 20px; }
+        .related-card { border: 1px solid var(--border); background: var(--bg-body); height: 100%; display: flex; flex-direction: column; transition: all 0.3s; box-shadow: 4px 4px 0 rgba(0,0,0,0.04); }
+        .related-card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 rgba(0,0,0,0.06); border-color: rgba(0,0,0,0.3); }
+        .related-img { width: 100%; aspect-ratio: 1/1; object-fit: cover; filter: sepia(0.15); border-bottom: 1px solid var(--border); padding: 4px; background: var(--bg-container); }
+        .related-info { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 10px; text-align: center; }
+        .related-name { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; color: var(--text-main); height: 40px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; }
+        .related-price-row { display: flex; flex-direction: column; align-items: center; }
+        .related-price-now { font-size: 15px; font-weight: 700; color: var(--primary); font-family: 'Playfair Display', serif; }
+        .related-price-was { font-size: 11px; color: var(--text-muted); text-decoration: line-through; font-family: 'Playfair Display', serif; font-style: italic; }
+        .related-btn { margin-top: 12px; font-size: 10px; font-weight: 700; color: var(--bg-container); padding: 10px; text-transform: uppercase; letter-spacing: 2px; background: var(--text-main); transition: 0.2s; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .related-card:hover .related-btn { background: var(--primary); }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="swiper product-swiper" id="main-slider"><div class="swiper-wrapper"><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-82250-mhr3t5u7gn4489.webp" id="main-product-img" style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-8224z-mhr3t5u7nnyc16.webp"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-8224x-mhr3t5u7i1ok26.webp"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-8224x-mhr3t5u7p2is2c.webp"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-8224o-mhr3t5u7jg9008.webp"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-8224o-mhr3t5u7kutg35.webp"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-8224o-mhr3t5u7qh381b.webp"  style="width:100%; height:100%; object-fit:contain;"></div></div><div class="swiper-pagination"></div></div>
+        <div class="swiper product-swiper" id="main-slider"><div class="swiper-wrapper"><div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-01_941902af-1daa-4324-9ace-8720a34d2c1f.jpg?v=1762874557&width=1296" id="main-product-img" style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-03_f6643735-86c2-4540-bae4-2f446552a1da.jpg?v=1762874560&width=1296"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-04_3437b823-ff17-4a3f-b065-6fe7580a5972.jpg?v=1762874559&width=1296"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-05_1af06481-3c76-4801-b56f-50849ed41c8c.jpg?v=1762874560&width=1296"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-06_47654d5d-ac9e-40f7-9c79-d69dcfa74bc9.jpg?v=1762874562&width=1296"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-07_50a4b050-df1c-49c6-9129-b2723cdb092b.jpg?v=1762874561&width=1296"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-08_6c2c9500-9947-4c72-bd30-2158a010e67d.jpg?v=1762874562&width=1296"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-09_43eb1b91-e1d1-4bd3-af08-3a8b70f4f79a.jpg?v=1762874562&width=1296"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-10_acbfe964-726e-477c-a61b-146da9547ee7.jpg?v=1762874563&width=1296"  style="width:100%; height:100%; object-fit:contain;"></div></div><div class="swiper-pagination"></div></div>
         
         
-        <div class="flash-sale-bar" style="background: #002e1c;">
+        <div class="flash-sale-bar" style="background: #020094; border-bottom: 3px double var(--accent);">
             <div class="fs-left">
                 <div class="fs-label">FLASH SALE!</div>
-                <div class="fs-subtext">PROMO SPESIAL HARI INI</div>
+                <div class="fs-subtext">PENAWARAN KLASIK TERBATAS</div>
             </div>
             <div class="fs-right">
                 <div class="fs-timer-label"><i class="fas fa-clock"></i> BERAKHIR DALAM</div>
@@ -123,30 +142,66 @@
         </div>
 
         <div class="p-info">
-            <div class="p-price-row" style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
-                <span class="p-price-now" id="display-price">Rp 189.000</span>
-                <span class="p-price-was">Rp 378.000</span>
-                <span class="p-discount-tag">-50%</span>
+            <h1 class="p-title">Frido Women's Arch Comfort Sandals</h1>
+            <div class="p-price-row">
+                <span class="p-price-now" id="display-price">Rp 179.000</span>
+                
+                <span class="p-price-was">Rp 338.000</span>
+                <span class="p-discount-tag">HEMAT 47%</span>
             </div>
-            <h1 class="p-title">GRENEY-4Pcs CD Renda Pinggang Karet Huruf-Renda</h1>
             
-            <div style="font-size: 11px; color: #757575; display:flex; align-items:center; gap:8px;">
-                <span style="color:#f1c40f">★</span> 4.9 
-                <span style="color:#ddd">|</span> 1.2RB Penilaian 
-                <span style="color:#ddd">|</span> 2.5RB+ Terjual
+            
+            <div style="font-size: 11px; color: var(--text-muted); display:flex; align-items:center; justify-content:center; gap:12px; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: 1px;">
+                <span><span style="color:var(--accent)">★</span> 4.9</span>
+                <span style="color:var(--border)">|</span> 
+                <span>1.2RB ULASAN</span>
+                <span style="color:var(--border)">|</span> 
+                <span>2.5RB+ TERJUAL</span>
             </div>
         </div>
 
         <!-- Store Info Section -->
         <div class="shop-section">
-            <img src="https://down-id.img.susercontent.com/file/id-11134216-7ra0m-mca0k1e7sy5a00@resize_w80_nl.webp" class="shop-logo">
+            <img src="https://images.seeklogo.com/logo-png/50/1/shop-app-logo-png_seeklogo-502747.png" class="shop-logo">
             <div class="shop-info">
-                <div class="shop-name">Greney Official Store</div>
-                <div class="shop-meta">Aktif 1 jam lalu | Kota Jakarta</div>
+                <div class="shop-name">Official Shop</div>
+                <div class="shop-meta" style="display: flex; align-items: center; gap: 4px;"><span style="color: #22c55e; font-size: 8px; line-height: 1;">●</span> Aktif &bull; Pengiriman dari Kota Jakarta</div>
             </div>
         </div>
 
         
+        <div class="s-section" style="border-top: 1px double var(--border); border-bottom: 1px double var(--border);">
+            <div class="s-section-header">
+                <div class="s-section-title">Pilihan Katalog: <span id="selected-variant-name" style="color:#020094; font-weight:700; font-family: 'Playfair Display', serif; font-style: italic;"></span></div>
+            </div>
+            <div class="variant-scroll-container">
+                
+                    <div class="variant-card active" onclick="selectVariant(this, '179000', 'Silver', 'https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-02_79fdc677-1e04-43a5-980f-cfb255a58cae.jpg?v=1762874631&width=1296')">
+                        <div class="v-card-img">
+                            <img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-02_79fdc677-1e04-43a5-980f-cfb255a58cae.jpg?v=1762874631&width=1296">
+                        </div>
+                        <div class="v-card-name">Silver</div>
+                        <div class="v-check"><i class="fas fa-check"></i></div>
+                    </div>
+                
+                    <div class="variant-card " onclick="selectVariant(this, '179000', 'Mocca', 'https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-02_796b535a-37e7-4809-93d1-6e96d3c1aa28.jpg?v=1762874595&width=1296')">
+                        <div class="v-card-img">
+                            <img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-02_796b535a-37e7-4809-93d1-6e96d3c1aa28.jpg?v=1762874595&width=1296">
+                        </div>
+                        <div class="v-card-name">Mocca</div>
+                        <div class="v-check"><i class="fas fa-check"></i></div>
+                    </div>
+                
+                    <div class="variant-card " onclick="selectVariant(this, '179000', 'Ivory', 'https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-02_3e2548bb-3a52-49a0-b172-98e82fc5adf1.jpg?v=1762874560&width=1296')">
+                        <div class="v-card-img">
+                            <img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-02_3e2548bb-3a52-49a0-b172-98e82fc5adf1.jpg?v=1762874560&width=1296">
+                        </div>
+                        <div class="v-card-name">Ivory</div>
+                        <div class="v-check"><i class="fas fa-check"></i></div>
+                    </div>
+                
+            </div>
+        </div>
 
         <div class="shipping-box" onclick="scrollToOrder()">
             <div class="shipping-icon"><i class="fas fa-truck-fast"></i></div>
@@ -154,33 +209,18 @@
                 <div class="shipping-title" id="dynamic-shipping-date">Garansi Tiba: ...</div>
                 <div class="shipping-desc">Dapatkan Jaminan Ongkir s/d 20RB</div>
             </div>
-            <i class="fas fa-chevron-right" style="color:#ccc; font-size:10px;"></i>
+            <i class="fas fa-chevron-right" style="color:var(--border); font-size:14px;"></i>
         </div>
 
-        <div style="background: #fff; border-bottom: 8px solid #f1f1f1;">
+        <div style="background: transparent;">
             <div class="dropdown-trigger active" onclick="toggleDropdown(this)">DESKRIPSI PRODUK <i class="fas fa-chevron-down"></i></div>
-            <div class="dropdown-content active">• Desain renda elegan dengan ban pinggang trendy untuk tampilan lebih modis.
-• Bahan lembut dan breathable yang nyaman dipakai sepanjang hari tanpa iritasi.
-• Karet pinggang elastis yang fleksibel dan tidak meninggalkan bekas pada kulit.
-• Paket hemat isi 4 pcs berkualitas premium untuk penggunaan jangka panjang.
-
-1. 7 hari bebas return/refund
-2. Jaminan asli 100%
-3.Kain teknologi paten
-
-** Ketentuan Penukaran Produk :
-
-– Menyertakan Video Unboxing pembukaan paket
-– Paket tidak lebih dari 1 minggu ( dari sejak paket diterima )
-– Tag produk masih utuh ( apabila copot , tidak diterima )
-– Produk tidak reject / kotor ( apabila paket sampai di kami , akan ada QC produk untuk proses penukaran )
-
-Jika Anda menerima paket dan pengiriman kurang atau salah, jangan khawatir, silakan chat Admin, gudang memiliki video paket yang dapat dicek, jika video menunjukkan barang paket tersebut memang hilang, kami akan mengembalikan dana pada waktunya.
-
-</div>
+            <div class="dropdown-content active">• Topangan lengkung optimal, redakan nyeri tumit & kaki.
+• Kenyamanan premium seharian penuh, langkah ringan tanpa beban.
+• Tingkatkan postur tubuh dan kepercayaan diri setiap melangkah.
+• Desain modern elegan, sempurna untuk gaya aktif & kasual.</div>
             
             <div class="dropdown-trigger" onclick="toggleDropdown(this)">PANDUAN UKURAN <i class="fas fa-chevron-down"></i></div>
-            <div class="dropdown-content">Pilih ukuran Anda.<img src="https://down-id.img.susercontent.com/file/sg-11134201-822wp-mhx87owqns3k98.webp" style="width:100%; margin-top:10px; border-radius:4px;"></div>
+            <div class="dropdown-content">Pilih ukuran Anda.<img src="https://down-id.img.susercontent.com/file/id-11134207-8224u-mgn3xrtfs7ikc7" style="width:100%; margin-top:20px; border:4px solid var(--bg-body); box-shadow: 0 4px 10px rgba(0,0,0,0.05);"></div>
             <div class="dropdown-trigger" onclick="toggleDropdown(this)">SPESIFIKASI TEKNIS <i class="fas fa-chevron-down"></i></div>
             <div class="dropdown-content">Bahan: Premium Quality
 Stok: Tersedia
@@ -189,62 +229,70 @@ Garansi: 100% Original</div>
 
         
         <div class="s-section-features">
-            <div style="padding: 20px 15px 5px; font-weight: 800; font-size: 13px; color: #888; text-transform: uppercase; letter-spacing: 1px;">Fitur Unggulan</div>
+            <div class="vintage-divider">❖ &bull; FEATURED HIGHLIGHTS &bull; ❖</div>
             <div class="features-vertical-list">
                 
                     <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224y-mhr3tvmb3z7se6" class="feature-img-large">
+                        <img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-06_47654d5d-ac9e-40f7-9c79-d69dcfa74bc9.jpg?v=1762874562" class="feature-img-large">
                         <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
+                            <div class="feature-title-large">Natural Daily Comfort</div>
+                            <div class="feature-desc-large">Supports natural foot alignment, reducing pressure on heels, knees, and lower back</div>
                         </div>
                     </div>
                 
                     <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224y-mhr3tvmalptvd2" class="feature-img-large">
+                        <img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-04_3437b823-ff17-4a3f-b065-6fe7580a5972.jpg?v=1762874559" class="feature-img-large">
                         <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
+                            <div class="feature-title-large">Soft cushioned insole</div>
+                            <div class="feature-desc-large">High-density cushioning absorbs impact, keeping every step gentle, supported, & pain-free</div>
                         </div>
                     </div>
                 
                     <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224y-mhr3tvmaoiyrf6@resize_w875_nl.webp" class="feature-img-large">
+                        <img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-07_50a4b050-df1c-49c6-9129-b2723cdb092b.jpg?v=1762874561" class="feature-img-large">
                         <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
+                            <div class="feature-title-large">Stable Heel Cushion</div>
+                            <div class="feature-desc-large">Prevents foot sliding, improves posture, & maintains steady footing throughout daily activities</div>
                         </div>
                     </div>
                 
                     <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224u-mhr3tvmapxj7b6@resize_w875_nl.webp" class="feature-img-large">
+                        <img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-05_1af06481-3c76-4801-b56f-50849ed41c8c.jpg?v=1762874560" class="feature-img-large">
                         <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
+                            <div class="feature-title-large">Skin-Friendly Strap Coating</div>
+                            <div class="feature-desc-large">Soft microfiber lining protects sensitive areas, ensuring comfortable wear without any discomfort</div>
                         </div>
                     </div>
                 
                     <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224w-mhr3tvmarc3nae@resize_w875_nl.webp" class="feature-img-large">
+                        <img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-08_6c2c9500-9947-4c72-bd30-2158a010e67d.jpg?v=1762874562" class="feature-img-large">
                         <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
+                            <div class="feature-title-large">Decorative Ribbon Support</div>
+                            <div class="feature-desc-large">Adds a graceful, polished touch that elevates casual, work, & ethnic outfits without feeling loud</div>
                         </div>
                     </div>
                 
                     <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224o-mhr3tvmau58jcc@resize_w875_nl.webp" class="feature-img-large">
+                        <img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-03_f6643735-86c2-4540-bae4-2f446552a1da.jpg?v=1762874560" class="feature-img-large">
                         <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
+                            <div class="feature-title-large">Non-slip sole</div>
+                            <div class="feature-desc-large">Provides steady traction on smooth & outdoor surfaces, improving stability with every step</div>
                         </div>
                     </div>
                 
                     <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224r-mhr3tvmavjsz3b@resize_w875_nl.webp" class="feature-img-large">
+                        <img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-10_acbfe964-726e-477c-a61b-146da9547ee7.jpg?v=1762874563" class="feature-img-large">
                         <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
+                            <div class="feature-title-large">Premium Upper Material</div>
+                            <div class="feature-desc-large">Soft synthetic upper molds to your feet, providing lasting </div>
+                        </div>
+                    </div>
+                
+                    <div class="feature-vertical-item">
+                        <img src="https://cdn.shopify.com/s/files/1/0553/0419/2034/files/ACS-09_43eb1b91-e1d1-4bd3-af08-3a8b70f4f79a.jpg?v=1762874562" class="feature-img-large">
+                        <div class="feature-content-large">
+                            <div class="feature-title-large">Adaptive Comfort</div>
+                            <div class="feature-desc-large"> comfort and a natural personalized fit</div>
                         </div>
                     </div>
                 
@@ -253,71 +301,71 @@ Garansi: 100% Original</div>
 
         
         <div class="s-section">
-            <div class="s-section-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
-                <div class="s-section-title">PENILAIAN PRODUK</div>
-                <div style="color:#002e1c; font-size:12px; font-weight:600; cursor:pointer;">Lihat Semua ></div>
+            <div class="s-section-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; border-bottom: 1px dashed var(--border); padding-bottom: 12px;">
+                <div class="s-section-title" style="margin-bottom:0;">ULASAN PELANGGAN</div>
+                <div style="color:#020094; font-size:12px; font-weight:700; cursor:pointer; font-family: 'Playfair Display', serif; font-style: italic; letter-spacing: 0.5px;">Lihat Arsip ></div>
             </div>
             <div class="s-testimonial-list">
                 
                     <div class="s-testimonial-item">
                         <div class="st-header">
-                            <img src="https://down-id.img.susercontent.com/file/id-11134233-7r98p-lzvuxdth55j956_tn" class="st-avatar">
+                            <img src="https://down-id.img.susercontent.com/file/66b845086c357a7732d64e2d5ce3c55b_tn" class="st-avatar">
                             <div class="st-user-info">
-                                <div class="st-name">Clarissa</div>
+                                <div class="st-name"> janemichaella</div>
                                 <div class="st-stars">★★★★★</div>
-                                <div class="st-meta"><span class="dynamic-date" data-days-ago="9"></span></div>
+                                <div class="st-meta">TERKONFIRMASI &bull; <span class="dynamic-date" data-days-ago="9"></span></div>
                             </div>
                         </div>
-                        <div class="st-text">Bahannya lembut banget, rendanya gak bikin gatal di kulit. Ukurannya pas dan karet pinggangnya elastis sesuai deskripsi. Paket sampai cepet banget, makasih ya!</div>
-                        <div class="st-media"><img src="https://down-id.img.susercontent.com/file/id-11134103-822wm-mn7cm19nmrk61f.webp" onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-822wm-mn7cm19nmrk61f.webp')" style="cursor:pointer;"></div>
+                        <div class="st-text">"Gila sih ini sendal! Kirain cuma iklan doang yg bilang comfort, ternyata beneran dong. Kaki aku kan suka pegel kl pake sendal biasa, ini seharian dipake belanja aman bgt. Arch supportnya mantep, berasa dipeluk gitu telapak kaki. Desainnya jg ga pasaran, suka deh! Worth it parah sih buat harga segini."</div>
+                        <div class="st-media"><img src="https://images.loox.io/uploads/2026/2/25/Hu5tfeLTvR.jpg" onclick="openLightbox('https://images.loox.io/uploads/2026/2/25/Hu5tfeLTvR.jpg')" style="cursor:pointer;"></div>
                     </div>
                 
                     <div class="s-testimonial-item">
                         <div class="st-header">
-                            <img src="https://down-id.img.susercontent.com/file/49a577e5f56d24d82ec1f719e7cc12f1_tn" class="st-avatar">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134233-7rbk0-m8ewwkhjdzbh70_tn" class="st-avatar">
                             <div class="st-user-info">
-                                <div class="st-name">Rangga</div>
+                                <div class="st-name"> fitri_indri01</div>
                                 <div class="st-stars">★★★★★</div>
-                                <div class="st-meta"><span class="dynamic-date" data-days-ago="4"></span></div>
+                                <div class="st-meta">TERKONFIRMASI &bull; <span class="dynamic-date" data-days-ago="11"></span></div>
                             </div>
                         </div>
-                        <div class="st-text">Sengaja beliin buat  istri, katanya suka banget sama modelnya. Bahannya kelihatan premium dan jahitannya rapi. Packing aman dan privasi terjaga.</div>
-                        <div class="st-media"><img src="https://down-id.img.susercontent.com/file/id-11134103-8224s-mi1g6ulcvs3mdc.webp" onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-8224s-mi1g6ulcvs3mdc.webp')" style="cursor:pointer;"></div>
+                        <div class="st-text">"barang sampai dgn aman, sandalnya bagus ringan dipakai, ada anti selipnya juga empuk,semoga awet, makasih seler"</div>
+                        <div class="st-media"><img src="https://images.loox.io/uploads/2026/6/22/yQeHDAqn3_mid.jpg" onclick="openLightbox('https://images.loox.io/uploads/2026/6/22/yQeHDAqn3_mid.jpg')" style="cursor:pointer;"></div>
                     </div>
                 
                     <div class="s-testimonial-item">
                         <div class="st-header">
-                            <img src="https://down-id.img.susercontent.com/file/9fbfc414b3a23fb3022f4f59f948bb2a_tn" class="st-avatar">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134233-7rase-m27zlx2obosud6_tn" class="st-avatar">
                             <div class="st-user-info">
-                                <div class="st-name">Nabila</div>
-                                <div class="st-stars">★★★★★</div>
-                                <div class="st-meta"><span class="dynamic-date" data-days-ago="9"></span></div>
+                                <div class="st-name">Chelsea</div>
+                                <div class="st-stars">★★★★☆</div>
+                                <div class="st-meta">TERKONFIRMASI &bull; <span class="dynamic-date" data-days-ago="2"></span></div>
                             </div>
                         </div>
-                        <div class="st-text">Suka sama desain huruf di pinggangnya, jadi kelihatan sporty tapi tetep cantik karena ada rendanya. Isi 4 pcs harganya worth it banget untuk kualitas sebagus ini.</div>
-                        <div class="st-media"><img src="https://down-id.img.susercontent.com/file/id-11134103-8224p-mknu1zhahe6b3c.webp" onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-8224p-mknu1zhahe6b3c.webp')" style="cursor:pointer;"></div>
+                        <div class="st-text">"Sendalnya udh dateng! Sesuai ekspektasi sih, pas di kaki aku no 38. Cuma pengiriman agak lama dikit ya, mungkin kurirnya lg overload. Tapi gapapa deh, sendalnya mulus kok, nyaman bgt dipake keliling komplek. Kualitasnya oke punya."</div>
+                        <div class="st-media"><img src="https://images.loox.io/uploads/2026/3/26/ujbMRZK9M_mid.jpg" onclick="openLightbox('https://images.loox.io/uploads/2026/3/26/ujbMRZK9M_mid.jpg')" style="cursor:pointer;"></div>
                     </div>
                 
                     <div class="s-testimonial-item">
                         <div class="st-header">
-                            <img src="https://down-id.img.susercontent.com/file/id-11134233-81ztk-meo3j1vnmbr52d_tn" class="st-avatar">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134233-7r98r-lu00st9ytkbv22_tn" class="st-avatar">
                             <div class="st-user-info">
-                                <div class="st-name">Felicia</div>
+                                <div class="st-name">Yoga</div>
                                 <div class="st-stars">★★★★★</div>
-                                <div class="st-meta"><span class="dynamic-date" data-days-ago="3"></span></div>
+                                <div class="st-meta">TERKONFIRMASI &bull; <span class="dynamic-date" data-days-ago="6"></span></div>
                             </div>
                         </div>
-                        <div class="st-text">Kualitas oke punya, warnanya juga cantik-cantik sesuai foto. Pas dicuci gak luntur dan gak gampang melar. Respon penjual ramah dan pengiriman super kilat.</div>
-                        <div class="st-media"><img src="https://down-id.img.susercontent.com/file/id-11134103-822wg-mnfkb33ro3r841.webp" onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-822wg-mnfkb33ro3r841.webp')" style="cursor:pointer;"></div>
+                        <div class="st-text">"Belikan buat nyokap yg kakinya suka nyeri kl pake sendal datar. Awalnya ragu, tapi pas dicoba katanya enak bgt, berasa ditopang gitu telapaknya. Jadi ga gampang pegel lg pas jalan jauh. Frido emg juara sih buat sendal arch supportnya. Nyokap happy, aku juga happy."</div>
+                        <div class="st-media"><img src="https://images.loox.io/uploads/2026/2/25/LMOxH8lIhg.jpg" onclick="openLightbox('https://images.loox.io/uploads/2026/2/25/LMOxH8lIhg.jpg')" style="cursor:pointer;"></div>
                     </div>
                 
             </div>
         </div>
 
-        <div id="order-section" style="padding:25px 15px; background:#fff;">
+        <div id="order-section" style="padding:48px 24px; background:var(--bg-body); border-top: 1px solid var(--border);">
             <div id="variant-summary"></div>
-            <h3 style="text-align:center; font-weight:900; color:var(--primary); font-size:14px; margin-bottom:15px; text-transform:uppercase;">Formulir Pemesanan</h3>
-            <!-- OrderOnline Embed Code - v8.0.2 --> <div class="ooef"> <form class="orderonline-embed-form" data-username="luna" data-product-slug="greney-cd-renda" data-product-id="6a107b0015ef798e590acff9" id="oo-embed-form-greney-cd-renda-7600" data-origin="orderonline"> <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div> </form> </div> <script> if (typeof xLogError != 'function') { var xLogError = function (error) { var req = new XMLHttpRequest(); var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; req.open('POST', 'https://api.orderonline.id/log', true); req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); req.send(params); }; } try { if (typeof xEmbedScript != 'function') { var xEmbedScript = function () { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.2', 'oo-embed-js'); }; } if (typeof xEmbedInit != 'function') { var xEmbedInit = function (w, n) { if (w.ooe) return; n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.2';n.queue = []; }; } xEmbedInit(window); ooe('setup', 'redirect', 'https://luna.orderonline.id'); ooe('init', '5f1133129d8e8e34501812c2', '6a107b0015ef798e590acff9', '6a107b0015ef798e590acffa', 'oo-embed-form-greney-cd-renda-7600', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false}); if (!window.jQuery) { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; t.addEventListener('load', xEmbedScript); s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery'); } else { xEmbedScript(); } } catch (e) { xLogError(e); throw e; } </script> <!-- End OrderOnline Embed Code -->
+            <h3 style="text-align:center; font-family:'Playfair Display', serif; font-weight:700; color:var(--text-main); font-size:24px; margin-bottom:32px; letter-spacing:1px; line-height: 1.2;">Formulir Pemesanan<br><span style="font-size: 13px; color: var(--text-muted); font-family: 'Plus Jakarta Sans', sans-serif; font-style: italic; letter-spacing: 0; font-weight: 500; text-transform:none;">Isi data di bawah ini untuk memesan</span></h3>
+            <!-- OrderOnline Embed Code - v8.0.2 --> <div class="ooef"> <form class="orderonline-embed-form" data-username="luna" data-product-slug="arch-comfort-sandals" data-product-id="6a50e1aec5bc64e0ec06bc69" id="oo-embed-form-arch-comfort-sandals-8226" data-origin="orderonline"> <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div> </form> </div> <script> if (typeof xLogError != 'function') { var xLogError = function (error) { var req = new XMLHttpRequest(); var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; req.open('POST', 'https://api.orderonline.id/log', true); req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); req.send(params); }; } try { if (typeof xEmbedScript != 'function') { var xEmbedScript = function () { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.2', 'oo-embed-js'); }; } if (typeof xEmbedInit != 'function') { var xEmbedInit = function (w, n) { if (w.ooe) return; n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.2';n.queue = []; }; } xEmbedInit(window); ooe('setup', 'redirect', 'https://luna.orderonline.id'); ooe('init', '5f1133129d8e8e34501812c2', '6a50e1aec5bc64e0ec06bc69', '6a50e1aec5bc64e0ec06bc6a', 'oo-embed-form-arch-comfort-sandals-8226', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false}); if (!window.jQuery) { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; t.addEventListener('load', xEmbedScript); s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery'); } else { xEmbedScript(); } } catch (e) { xLogError(e); throw e; } </script> <!-- End OrderOnline Embed Code -->
         </div>
 
         
@@ -367,15 +415,13 @@ Garansi: 100% Original</div>
 
             const summary = document.getElementById('variant-summary');
             if (summary) {
-              // Fixed: Escape backticks to prevent premature termination of outer template literal
               summary.innerHTML = `
                 <div class="summary-card">
                     <img src="${image}" class="summary-img">
                     <div class="summary-info">
-                        <div class="summary-title">GRENEY-4Pcs CD Renda Pinggang Karet Huruf-Renda</div>
+                        <div class="summary-title">Frido Women's Arch Comfort Sandals</div>
                         <div class="summary-variant-name">${name}</div>
                     </div>
-                    <i class="fas fa-check-circle summary-check"></i>
                 </div>`;
             }
         }
@@ -468,5 +514,339 @@ Garansi: 100% Original</div>
             }
         });
     </script>
-</body>
+
+    <style>
+      .sp-toast {
+        position: fixed;
+        
+        bottom: 24px;
+        left: 24px;
+      
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px) saturate(180%);
+        -webkit-backdrop-filter: blur(12px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 16px;
+        padding: 10px 14px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        z-index: 10000;
+        width: calc(100% - 32px);
+        max-width: 310px;
+        display: none;
+        opacity: 0;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      
+      
+        @keyframes sp-slide-in-bl {
+          from {
+            opacity: 0;
+            transform: translateY(40px) translateX(-20px) scale(0.92);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0) translateX(0) scale(1);
+          }
+        }
+        @keyframes sp-slide-out-bl {
+          from {
+            opacity: 1;
+            transform: translateY(0) translateX(0) scale(1);
+          }
+          to {
+            opacity: 0;
+            transform: translateY(30px) translateX(-15px) scale(0.95);
+          }
+        }
+        .sp-toast.show {
+          display: block;
+          animation: sp-slide-in-bl 0.50s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .sp-toast.hide {
+          display: block;
+          animation: sp-slide-out-bl 0.50s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+      
+      
+      @media (max-width: 500px) {
+        .sp-toast {
+          bottom: 90px !important; left: 16px !important; right: 16px !important; width: calc(100% - 32px) !important;
+          
+          max-width: none !important;
+          transform: none !important;
+        }
+      }
+    
+
+      .sp-toast-content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .sp-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2.5px solid #020094;
+        flex-shrink: 0;
+      }
+      .sp-toast-text {
+        flex: 1;
+        min-width: 0;
+      }
+      .sp-toast-name-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2px;
+      }
+      .sp-name {
+        font-weight: 800;
+        font-size: 12.5px;
+        color: #0f172a;
+      }
+      .sp-verified {
+        font-size: 9px;
+        font-weight: 700;
+        color: #059669;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+      .sp-message {
+        font-size: 11px;
+        color: #334155;
+        line-height: 1.35;
+        font-weight: 500;
+      }
+      .sp-time {
+        font-size: 9px;
+        color: #64748b;
+        margin-top: 4px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      
+      /* Dark theme specific override */
+      .dark-theme-sp {
+        background: rgba(15, 23, 42, 0.6);
+        border-color: rgba(255, 255, 255, 0.08);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      }
+      .dark-theme-sp .sp-name {
+        color: #ffffff;
+      }
+      .dark-theme-sp .sp-message {
+        color: #e2e8f0;
+      }
+      .dark-theme-sp .sp-time {
+        color: #94a3b8;
+      }
+    </style>
+    
+    <div id="social-proof-toast" class="sp-toast ">
+      <div class="sp-toast-content">
+        
+        <div class="sp-toast-text">
+          <div class="sp-toast-name-row">
+            <span id="sp-name" class="sp-name"></span>
+            <span class="sp-verified"><i class="fas fa-check-circle"></i> Terverifikasi</span>
+          </div>
+          <div id="sp-message" class="sp-message"></div>
+          <div id="sp-time" class="sp-time"></div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      (function() {
+        const namesStr = "Distria,Zahrah,Dita,Mila,Saroh,Ririn,Vita,Ella,Ulin,Nova,iin,Layla,Fida,Aniro,Yunus,Sukase,Anisa,";
+        const citiesStr = "Jakarta, Surabaya, Bandung, Medan, Bekasi, Tangerang, Depok, Semarang, Makassar, Palembang, Bogor, Malang, Yogyakarta, Denpasar, Solo, Pekanbaru";
+        
+        const names = namesStr.split(',').map(function(x) { return x.trim(); }).filter(Boolean);
+        const cities = citiesStr.split(',').map(function(x) { return x.trim(); }).filter(Boolean);
+        
+        if (names.length === 0 || cities.length === 0) return;
+
+        const intervalSec = 8;
+        const durationSec = 5;
+        const customProductName = "Arch Comfort Sandals";
+        const productName = customProductName.trim() ? customProductName : "Frido Women's Arch Comfort Sandals";
+        const avatarType = "cowok";
+        const statusText = "baru saja memesan";
+        const brandColor = "#020094";
+
+        const cowokAvatars = [
+          'photo-1507003211169-0a1dd7228f2d', 'photo-1500648767791-00dcc994a43e', 'photo-1539571696357-5a69c17a67c6',
+          'photo-1519085360753-af0119f7cbe7', 'photo-1506794778202-cad84cf45f1d', 'photo-1492562080023-ab3db95bfbce',
+          'photo-1544005313-94ddf0286df2', 'photo-1501196354995-cbb51c65aaea', 'photo-1522075469751-3a6694fb2f61',
+          'photo-1542206395-9feb3edaa68d', 'photo-1560250097-0b93528c311a', 'photo-1531427186611-ecfd6d936c79',
+          'photo-1489980508314-941910ded1f4', 'photo-1513956589380-bad6acb9b9d4', 'photo-1506803682981-6e718a9dd3ee'
+        ];
+
+        const cewekAvatars = [
+          'photo-1534528741775-53994a69daeb', 'photo-1517841905240-472988babdf9', 'photo-1544005313-94ddf0286df2',
+          'photo-1494790108377-be9c29b29330', 'photo-1524504388940-b1c1722653e1', 'photo-1531746020798-e6953c6e8e04',
+          'photo-1554151228-14d9def656e4', 'photo-1580489944761-15a19d654956', 'photo-1614283233556-f35b0c801ef1',
+          'photo-1567532939604-b6b5b0db2604', 'photo-1438761681033-6461ffad8d80', 'photo-1508214751196-bcfd4ca60f91',
+          'photo-1544717305-2782549b5136', 'photo-1525134479668-1bee5c7c6845', 'photo-1531123897727-8f129e1688ce'
+        ];
+
+        const hijabAvatars = [
+          'photo-1607746882042-944635dfe10e', 'photo-1568602471122-7832951cc4c5', 'photo-1606132711719-79f9fefe8dcc',
+          'photo-1589156280159-27698a70f29e', 'photo-1573496359142-b8d87734a5a2', 'photo-1511556532299-8f662fc26c06',
+          'photo-1588516903720-8ceb67f9ef84', 'photo-1504933350103-e840ede978d5', 'photo-1618220179428-22790b461013',
+          'photo-1590086782957-93c06ef217b4'
+        ];
+
+        const waAvatars = [
+          'photo-1534308983496-4fabb1a015ee', 'photo-1535713875002-d1d0cf377fde', 'photo-1570295999919-56ceb5ecca61',
+          'photo-1494790108377-be9c29b29330', 'photo-1599566150163-29194dcaad36', 'photo-1507003211169-0a1dd7228f2d',
+          'photo-1438761681033-6461ffad8d80', 'photo-1607990283143-e81e7a2c93ab', 'photo-1543610892-0b1f7e6d8ac1',
+          'photo-1527980965255-d3b416303d12'
+        ];
+
+        function isFemale(name) {
+          if (!name) return false;
+          var lower = name.toLowerCase().trim();
+          
+          // Famous indonesian female triggers
+          var femaleSet = {
+            'siti': true, 'amanda': true, 'indah': true, 'jessica': true, 'syifa': true, 'anisa': true, 'dian': true, 'fitri': true, 
+            'hesti': true, 'ika': true, 'kiki': true, 'mega': true, 'putri': true, 'ratna': true, 'utami': true, 'dewi': true, 'sri': true, 
+            'bella': true, 'nisa': true, 'rina': true, 'sari': true, 'wati': true, 'santi': true, 'kartika': true, 'amalia': true, 
+            'lia': true, 'ria': true, 'dhea': true, 'aulia': true, 'ayu': true, 'intan': true, 'angel': true, 'chandra': true, 
+            'cantika': true, 'lisa': true, 'novi': true, 'sarah': true, 'mey': true, 'meylani': true, 'selvi': true, 'selvia': true, 
+            'linda': true, 'yani': true, 'ani': true, 'erika': true, 'elizabeth': true, 'rachel': true, 'clara': true, 'nadia': true, 
+            'nadya': true, 'fani': true, 'fanny': true, 'tari': true, 'ndah': true, 'nia': true, 'grace': true, 'sherly': true,
+            'shinta': true, 'marta': true, 'maria': true, 'keisha': true, 'aurora': true, 'nayla': true, 'zahra': true,
+            'aisyah': true, 'khadijah': true, 'fatimah': true, 'salma': true, 'maharani': true, 'puji': true, 'asri': true, 
+            'nurul': true, 'safira': true, 'keyla': true, 'chika': true
+          };
+
+          var words = lower.split(/s+/);
+          for (var i = 0; i < words.length; i++) {
+            if (femaleSet[words[i]]) return true;
+          }
+
+          var femaleTriggers = [
+            'siti', 'amanda', 'indah', 'jessica', 'syifa', 'anisa', 'dian', 'fitri', 
+            'hesti', 'ika', 'kiki', 'mega', 'putri', 'ratna', 'utami', 'dewi', 'sri', 
+            'bella', 'nisa', 'rina', 'sari', 'wati', 'santi', 'kartika', 'amalia', 
+            'lia', 'ria', 'dhea', 'aulia', 'ayu', 'intan', 'angel', 'chandra', 
+            'cantika', 'lisa', 'novi', 'sarah', 'mey', 'meylani', 'selvi', 'selvia', 
+            'linda', 'yani', 'ani', 'erika', 'elizabeth', 'rachel', 'clara', 'nadia', 
+            'nadya', 'fani', 'fanny', 'tari', 'ndah', 'nia'
+          ];
+
+          for (var j = 0; j < femaleTriggers.length; j++) {
+            if (lower.indexOf(femaleTriggers[j]) !== -1) {
+              if (lower.indexOf('saputra') !== -1 || lower.indexOf('putra') !== -1 || lower.indexOf('budi') !== -1) {
+                return false;
+              }
+              return true;
+            }
+          }
+
+          if (lower.endsWith('ti') || lower.endsWith('ni') || lower.endsWith('mi') || lower.endsWith('na') || lower.endsWith('ya') || lower.endsWith('sa')) {
+            var maleExceptions = ['budi', 'ari', 'andri', 'hendri', 'heri', 'feri', 'fandy', 'billy', 'rudi', 'yudi', 'dedi', 'roni', 'tony', 'joni', 'adi', 'aldi', 'hadi', 'fauzi', 'fikri', 'fahmi', 'boby', 'dani', 'deni', 'doni', 'rony', 'ali', 'reza'];
+            if (maleExceptions.some(function(exp) { return lower.endsWith(exp) || lower === exp; })) {
+              return false;
+            }
+            return true;
+          }
+
+          return false;
+        }
+
+        var toast = document.getElementById('social-proof-toast');
+        var avatarImg = document.getElementById('sp-avatar');
+        var nameEl = document.getElementById('sp-name');
+        var messageEl = document.getElementById('sp-message');
+        var timeEl = document.getElementById('sp-time');
+
+        if (!toast || !nameEl || !messageEl || !timeEl) return;
+
+        function getRandomItem(arr) {
+          return arr[Math.floor(Math.random() * arr.length)];
+        }
+
+        // Keep track of shown names to make it look even more authentic
+        var remainingNames = names.slice();
+        var remainingCities = cities.slice();
+
+        function showSocialProof() {
+          if (remainingNames.length === 0) remainingNames = names.slice();
+          if (remainingCities.length === 0) remainingCities = cities.slice();
+
+          // Pick and remove
+          var nameIdx = Math.floor(Math.random() * remainingNames.length);
+          var name = remainingNames.splice(nameIdx, 1)[0];
+
+          var cityIdx = Math.floor(Math.random() * remainingCities.length);
+          var city = remainingCities.splice(cityIdx, 1)[0];
+
+          var nameIsFemale = isFemale(name);
+          var photoId = '';
+
+          if (nameIsFemale) {
+            if (avatarType === 'hijab') {
+              photoId = getRandomItem(hijabAvatars);
+            } else if (avatarType === 'cewek') {
+              photoId = getRandomItem(cewekAvatars);
+            } else if (avatarType === 'wa') {
+              photoId = getRandomItem(cewekAvatars.concat(hijabAvatars));
+            } else {
+              photoId = getRandomItem(cewekAvatars);
+            }
+          } else {
+            if (avatarType === 'wa') {
+              photoId = getRandomItem(waAvatars);
+            } else if (avatarType === 'hijab') {
+              photoId = getRandomItem(hijabAvatars); // fallback to hijab if female name, male name fallback?
+            } else {
+              photoId = getRandomItem(cowokAvatars);
+            }
+          }
+          
+          // Formulate avatar URL nicely sized and squared
+          if (avatarImg && photoId) {
+            var avatarUrl = 'https://images.unsplash.com/' + photoId + '?auto=format&fit=crop&w=120&h=120&q=80';
+            avatarImg.src = avatarUrl;
+          }
+          
+          nameEl.innerText = name;
+          messageEl.innerHTML = 'dari <strong style="color: ' + brandColor + '; font-weight:700;">' + city + '</strong> ' + statusText + ' <span style="font-weight: 700;">' + productName + '</span>';
+          
+          var minutesAgo = Math.floor(Math.random() * 15) + 1;
+          timeEl.innerHTML = '<i class="fas fa-clock"></i> &nbsp;' + (minutesAgo === 1 ? 'Baru saja' : minutesAgo + ' menit yang lalu');
+
+          // Trigger show with animation
+          toast.style.display = 'block';
+          toast.classList.remove('hide');
+          toast.classList.add('show');
+
+          // Hide after duration
+          setTimeout(function() {
+            toast.classList.remove('show');
+            toast.classList.add('hide');
+            setTimeout(function() {
+              if (toast.classList.contains('hide') && !toast.classList.contains('show')) {
+                toast.style.display = 'none';
+              }
+            }, 400);
+          }, durationSec * 1000);
+        }
+
+        // Delay starting social proof popups to let user settle in
+        setTimeout(function() {
+          showSocialProof();
+          setInterval(showSocialProof, intervalSec * 1000);
+        }, 1200);
+      })();
+    </script>
+    </body>
 </html>
